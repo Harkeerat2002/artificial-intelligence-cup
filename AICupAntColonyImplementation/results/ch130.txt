@@ -1,0 +1,5 @@
+Problem Namech130
+Best Cost: 6262
+Gap: 2.48773
+Time: 59.2108
+

@@ -1,3 +1,8 @@
+USI - Università della Svizzera italiana, Lugano (Switzerland)
+Faculty of Informatics
+Autumn Semester 2022
+Artificial Intelligence 2022-2023
+
 # Traveling Salesman Problem with Ant Colony Optimization
 
 This project implements a solution to the Traveling Salesman Problem (TSP) using Ant Colony Optimization (ACO). The project also uses the Nearest Neighbor heuristic as an initial starting point, and applies a 2-opt local search algorithm to improve the solution.

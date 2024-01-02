@@ -1,23 +1,37 @@
-# Artificial Inteligence Project Report
-Author: Harkeerat Singh Sawhney
+# Traveling Salesman Problem with Ant Colony Optimization
 
-## Summery of the project:
-I have chosen to implement the Traveling Sales Man Problem with Ant Colony Optimization. I also used Nearest Neighbor as my initial starting result, and then ran Ant Colony on the results which I got from that. The main aim for this was so that I can get myself into a good starting position. Alongside that I implemented 2-opt as my local search algorithm. After I find my solution I run 2-opt on it to make the solution better. I tried running 2-opt inside Ant Colony Itself, however the implementation of mine was not giving my the correct results which I wanted. I faced this bug towared the last minute, which led me to spend a tough all night to fix this and get the correct results. The results of the project are attached in the excel sheet, which was given to us.
+This project implements a solution to the Traveling Salesman Problem (TSP) using Ant Colony Optimization (ACO). The project also uses the Nearest Neighbor heuristic as an initial starting point, and applies a 2-opt local search algorithm to improve the solution.
 
-For the bigger problems, I had to use 2-opt right after the nearest Neightbor, as othweise my results were very far of. With the improved of Nearest neighbor with 2-opt it was able to give me a good starting point to run my Ant Colony over.
+## Implementation Details
 
-I gave more time for 2-opt to run as it improved my results drasticly. Two-opt gave me best results when I ran it after short problems, and before and after long problems.
+The project is implemented in C++ and consists of the following main components:
 
-Overall my average gap for all the problems are **10%**
+- **Nearest Neighbor heuristic**: This is used to get an initial feasible solution to the TSP.
+- **Ant Colony Optimization**: This is the main algorithm used to improve upon the initial solution provided by the Nearest Neighbor heuristic.
+- **2-opt local search**: This is used to further refine the solution obtained from the ACO.
 
-## Problems I faced:
-The biggest problem I faced was the bug in my 2-opt implementation. I was not able to get the correct results, which was very frustrating. I spent a lot of time trying to fix this, and I was able to fix it in the end. I also faced a lot of problems with the Ant Colony, as I was not able to get the correct results. I was able to fix this by changing my parameters and also by changing the way I was calculating the pheromone. Along with that in Ant Colony I had the problem with my solution not being valid. It was difficult to debugg, since unlike python, I couldnt not graph it.
+The project also includes a mechanism to handle larger problems by applying the 2-opt algorithm right after the Nearest Neighbor heuristic. This provides a better starting point for the ACO.
 
-## Possible Improvements
-My results can deffinatly be improved. I feel I can fix the Two-opt I can achieve much better results, since I can run this inside the Ant-colony itself. Also if I ran this multiple times to get a better starting point, with my seed and also to improve on my parameters, it could have improved the score a lot.
+## Running the Code
 
-## How to run the project:
-In order to run the project the following commmands need to be run:
-```
+To compile and run the code, use the following command:
+
+```sh
 g++ -Ofast ./TSP_ACP.cpp -o tsp_acp && ./tsp_acp
 ```
+
+This will generate an executable file tsp_acp which when run, will execute the TSP solution.
+
+## Data Files
+The project includes several .tsp files in the data directory. These files contain the data for various instances of the TSP.
+
+## Results
+The results of the algorithm are written to text files in the results directory. Each file corresponds to a specific instance of the TSP.
+
+## Future Improvements
+The current implementation can be improved in several ways:
+
+- Fixing the 2-opt implementation to achieve better results.
+- Running the 2-opt algorithm multiple times to get a better starting point.
+- Improving the parameters of the ACO to get better results.
+

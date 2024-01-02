@@ -2,6 +2,7 @@ USI - Università della Svizzera italiana, Lugano (Switzerland)
 Faculty of Informatics
 Autumn Semester 2022
 Artificial Intelligence 2022-2023
+*Harkeerat Singh Sawhney*
 
 # Traveling Salesman Problem with Ant Colony Optimization
 
